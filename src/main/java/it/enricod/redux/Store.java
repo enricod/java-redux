@@ -11,7 +11,6 @@ import java.util.function.Consumer;
 /**
  * This is a Store implementation.
  *
- * @author Alexandre Grison (a.grison@gmail.com)
  */
 public class Store<State, Action>
 		extends Observable

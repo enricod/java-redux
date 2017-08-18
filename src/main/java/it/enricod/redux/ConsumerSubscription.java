@@ -7,7 +7,6 @@ import java.util.function.Consumer;
  * This represents part of a store, regarding the subscribing/un-subscribing
  * using {@link java.util.function.Consumer} instead of {@link java.util.Observer}.
  *
- * @author Alexandre Grison (a.grison@gmail.com)
  */
 public interface ConsumerSubscription<State> {
 	/**

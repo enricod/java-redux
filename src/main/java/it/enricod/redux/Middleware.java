@@ -6,7 +6,6 @@ package it.enricod.redux;
  * 2. the action which is to be dispatched
  * 3. the next middleware in the chain of middlewares.
  *
- * @author Alexandre Grison (a.grison@gmail.com)
  */
 @FunctionalInterface
 public interface Middleware<State, Action>

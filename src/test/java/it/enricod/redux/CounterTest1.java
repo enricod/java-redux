@@ -22,14 +22,22 @@ public class CounterTest1 {
     final Middleware<Integer, String> middleware = ( state,
                                                                     action,
                                                                     next) -> {
-        System.out.println("Before " + state);
+        System.out.println("Before1 " + state);
         next.accept(state, action, null);
-        System.out.println("After " +state);
+        System.out.println("After1 " +state);
+    };
+
+    final Middleware<Integer, String> middleware2 = ( state,
+                                                     action,
+                                                     next) -> {
+        System.out.println("Before2 " + state);
+        next.accept(state, action, null);
+        System.out.println("After2 " +state);
     };
 
     public void foo() {
         // This is our store with its initial state of zero and the reducer seen above
-        Store<Integer, String> store = Redux.createStore(0, reducer,middleware);
+        Store<Integer, String> store = Redux.createStore(0, reducer,middleware, middleware2);
 
         // dispatch an INC action
         store.dispatch(INC);

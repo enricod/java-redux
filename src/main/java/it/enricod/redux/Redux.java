@@ -10,7 +10,6 @@ import org.apache.commons.beanutils.PropertyUtilsBean;
 /**
  * Main entry point for Redux4j.
  *
- * @author Alexandre Grison (a.grison@gmail.com)
  */
 public class Redux {
 	private static final PropertyUtilsBean props = new PropertyUtilsBean();

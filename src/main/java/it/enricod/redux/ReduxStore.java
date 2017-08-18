@@ -5,7 +5,6 @@ import java.util.UUID;
 /**
  * This represents a Store.
  *
- * @author Alexandre Grison (a.grison@gmail.com)
  */
 public interface ReduxStore<State, Action> {
 	/**
